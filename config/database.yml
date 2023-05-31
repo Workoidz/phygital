@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: phygital_production
   username: phygital
   password: <%= ENV["PHYGITAL_DATABASE_PASSWORD"] %>
